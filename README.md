@@ -48,4 +48,4 @@ Each package owns only this provider and its passive documentation. Its `Replace
 
 ## Illustrated user guide
 
-The provider installs only `Japanese Imperial Era Calendar.so` and the illustrated `Japanese Imperial Era Calendar.pdf`. Engineering documentation remains in GitHub; PGO, native compiler and source hash evidence is kept in Debian control metadata.
+The provider installs only `Japanese Imperial Era Calendar.so` and the illustrated `Calendar-Japanese.pdf`. Engineering documentation remains in GitHub; PGO, native compiler and source hash evidence is kept in Debian control metadata.

@@ -1,12 +1,12 @@
 {
   "title": "Japanese Imperial Era Calendar",
-  "intro": "Japan often labels years by the reigning emperor's official era, while retaining Gregorian month and day numbering in modern civil life.",
-  "summary": "A modern Gregorian date with an imperial-era label and a year counted from that era's beginning.",
-  "origin": "Japan's modern era system includes Meiji, Taisho, Showa, Heisei and Reiwa. The Gregorian calendar was adopted for civil use in 1873.",
+  "intro": "Japan's modern imperial era system labels years according to official reign-era boundaries while retaining Gregorian months and days.",
+  "summary": "A date includes an era name, its year number, month and day.",
+  "origin": "The Gregorian calendar was adopted for Japanese civil use in 1873; the provider covers the modern Meiji, Taisho, Showa, Heisei and Reiwa eras.",
   "ring_label": "5",
   "ring_caption": "ERAS",
   "diagram_title": "FIVE MODERN IMPERIAL ERAS",
-  "structure": "An imperial era changes when the era officially begins; the era year resets to 1 even if the Gregorian year is already underway.",
+  "structure": "The era year is Gregorian year minus the era's starting year plus one. The first year begins at the actual era transition, not necessarily on 1 January.",
   "diagram_caption": "ERA NAME + YEAR NUMBER + ORDINARY DATE",
   "sections": [
     {
@@ -31,9 +31,9 @@
       "special": true
     }
   ],
-  "pattern_note": "The year a new era begins is known as its first year (gannen). An era year need not start on 1 January.",
-  "history": "Era names remain common in official forms and everyday references in Japan. Changes can occur within a Gregorian calendar year when imperial succession takes place.",
-  "example": "The Gregorian year 2026 is Reiwa 8. A date in April 2019 was Heisei 31, but a date in May 2019 is Reiwa 1.",
-  "limits": "Before 1 January 1873 Japanese civil calendar dates were lunisolar. Projecting modern Gregorian months backward into Meiji years 1–5 is not historic Japanese civil notation.",
+  "pattern_note": "The first year is called gannen; subsequent era years increment on the Gregorian New Year.",
+  "history": "Era labels remain familiar in Japanese official forms and everyday records. They identify the chronology rather than a different month-length system.",
+  "example": "30 April 2019 was Heisei 31; 1 May 2019 was Reiwa 1. Gregorian 2026 is Reiwa 8.",
+  "limits": "Before 1 January 1873 Japanese civil dates were lunisolar. The provider's Gregorian projections for Meiji years 1–5 are not original historical civil notation.",
   "source": "https://github.com/Infiltrator-Projects/Calendar-Japanese"
 }

@@ -1,9 +1,7 @@
 {
   "title": "Japanese Imperial Era Calendar",
-  "intro": "Japan's modern imperial era system labels years according to official reign-era boundaries while retaining Gregorian months and days.",
-  "summary": "A date includes an era name, its year number, month and day.",
-  "origin": "The Gregorian calendar was adopted for Japanese civil use in 1873; the provider covers the modern Meiji, Taisho, Showa, Heisei and Reiwa eras.",
-  "structure": "The era year is Gregorian year minus the era's starting year plus one. The first year begins at the actual era transition, not necessarily on 1 January.",
+  "intro": "Japan's modern imperial era system identifies a date by era name, era year, Gregorian month and day.",
+  "structure": "The first era year begins on the actual transition date, not necessarily on 1 January, and is called gannen. Subsequent era years increment on the Gregorian New Year.",
   "sections": [
     {
       "name": "Meiji",
@@ -26,10 +24,12 @@
       "days": "Era began 2019"
     }
   ],
-  "pattern_note": "The first year is called gannen; subsequent era years increment on the Gregorian New Year.",
-  "history": "Era labels remain familiar in Japanese official forms and everyday records. They identify the chronology rather than a different month-length system.",
   "example": "30 April 2019 was Heisei 31; 1 May 2019 was Reiwa 1. Gregorian 2026 is Reiwa 8.",
+  "history": "The Gregorian calendar was adopted for Japanese civil use in 1873. The provider covers the modern Meiji, Taisho, Showa, Heisei and Reiwa eras. Era labels remain familiar in official forms and everyday records.",
+  "model": "The provider uses recorded modern imperial era boundaries and Gregorian month/day arithmetic. Era year equals Gregorian year minus the era's starting year plus one.",
   "limits": "Before 1 January 1873 Japanese civil dates were lunisolar. The provider's Gregorian projections for Meiji years 1–5 are not original historical civil notation.",
-  "source": "https://github.com/Infiltrator-Projects/Calendar-Japanese",
-  "model": "The provider uses the recorded modern imperial era boundaries and Gregorian month/day arithmetic, with the era-year number relative to the Gregorian starting year."
+  "sources": [
+    "https://github.com/Infiltrator-Projects/Calendar-Japanese",
+    "Model evidence: https://github.com/Infiltrator-Projects/Calendar-Japanese/blob/main/docs/MODEL.md"
+  ]
 }

@@ -50,10 +50,7 @@ def epoch():
 
 
 def check_requirements():
-    missing = [x for x in ("gcc", "make", "pkg-config", "dpkg", "dpkg-deb", "readelf", "strip") if not shutil.which(x)]
-    if subprocess.run([sys.executable, "-c", "import reportlab"], stdout=subprocess.DEVNULL,
-                      stderr=subprocess.DEVNULL).returncode != 0:
-        missing.append("python3-reportlab")
+    missing = [x for x in ("gcc", "make", "pkg-config", "dpkg", "dpkg-deb", "readelf", "strip", "jq", "ps2pdf", "iconv", "fold") if not shutil.which(x)]
     dependencies = MANIFEST["build_dependencies"]
     if not missing and dependencies:
         if subprocess.run(["pkg-config", "--exists", *dependencies]).returncode:
@@ -70,7 +67,7 @@ def ensure_requirements(provision):
     if os.geteuid() != 0:
         command = ["sudo", "--", *command]
     run([*command, "update"])
-    packages = ["build-essential", "binutils", "pkg-config", "python3", "python3-reportlab"]
+    packages = ["build-essential", "binutils", "pkg-config", "python3", "jq", "ghostscript"]
     if "glib-2.0" in MANIFEST["build_dependencies"]:
         packages.append("libglib2.0-dev")
     if "icu-i18n" in MANIFEST["build_dependencies"]:
@@ -156,7 +153,7 @@ def build_deb(profile, output, jobs):
         documentation = stage / DOCUMENTATION
         documentation.parent.mkdir(parents=True)
         guide = documentation
-        run([sys.executable, "packaging/build_guide.py", "docs/GUIDE.json", guide])
+        run(["bash", str(ROOT / "common/calendar-tools/guide.sh"), str(guide)])
         # Source/PGO/LTO/hash evidence lives in Debian control metadata only.
         # Runtime package contract: exactly one native SO and one PDF.
         # Development documents, translations, scripts and tests must not ship.

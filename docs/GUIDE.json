@@ -3,37 +3,33 @@
   "intro": "Japan's modern imperial era system labels years according to official reign-era boundaries while retaining Gregorian months and days.",
   "summary": "A date includes an era name, its year number, month and day.",
   "origin": "The Gregorian calendar was adopted for Japanese civil use in 1873; the provider covers the modern Meiji, Taisho, Showa, Heisei and Reiwa eras.",
-  "ring_label": "5",
-  "ring_caption": "ERAS",
-  "diagram_title": "FIVE MODERN IMPERIAL ERAS",
   "structure": "The era year is Gregorian year minus the era's starting year plus one. The first year begins at the actual era transition, not necessarily on 1 January.",
-  "diagram_caption": "ERA NAME + YEAR NUMBER + ORDINARY DATE",
   "sections": [
     {
       "name": "Meiji",
-      "days": "1868"
+      "days": "Era began 1868"
     },
     {
       "name": "Taisho",
-      "days": "1912"
+      "days": "Era began 1912"
     },
     {
       "name": "Showa",
-      "days": "1926"
+      "days": "Era began 1926"
     },
     {
       "name": "Heisei",
-      "days": "1989"
+      "days": "Era began 1989"
     },
     {
       "name": "Reiwa",
-      "days": "2019",
-      "special": true
+      "days": "Era began 2019"
     }
   ],
   "pattern_note": "The first year is called gannen; subsequent era years increment on the Gregorian New Year.",
   "history": "Era labels remain familiar in Japanese official forms and everyday records. They identify the chronology rather than a different month-length system.",
   "example": "30 April 2019 was Heisei 31; 1 May 2019 was Reiwa 1. Gregorian 2026 is Reiwa 8.",
   "limits": "Before 1 January 1873 Japanese civil dates were lunisolar. The provider's Gregorian projections for Meiji years 1–5 are not original historical civil notation.",
-  "source": "https://github.com/Infiltrator-Projects/Calendar-Japanese"
+  "source": "https://github.com/Infiltrator-Projects/Calendar-Japanese",
+  "model": "The provider uses the recorded modern imperial era boundaries and Gregorian month/day arithmetic, with the era-year number relative to the Gregorian starting year."
 }
